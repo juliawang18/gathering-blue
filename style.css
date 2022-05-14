@@ -1,5 +1,5 @@
 :root {
-    --telescope-highlight: #ab88f355;
+    --telescope-highlight: #88acf355;
     --telescope-highlight-hover: #6a8dff9a;
     --telescope-text-color: #1f2021;
 }
@@ -33,10 +33,6 @@
     display: none;
 }
 
-figure {
-    padding-right: 3em;
-}
-
 #telescope .details.close:hover {
     background-color: var(--telescope-highlight-hover);
 }
@@ -49,32 +45,75 @@ figure {
 
 body {
     background: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 500;
+}
+
+p {
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.container {
+    overflow: hidden;
+}
+
+.menu-wrapper {
+    position: absolute;
+    z-index: 1;
+    left: 10vw;
+    top: 15vh;
+    color: #FFF;
+    width: 20vw;
+}
+
+.home-link {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.home-description {
+    font-size: 0.9em;
+    line-height: 1.8em;
+}
+
+.link-dot:hover:after {
+    content: "";
+    position: absolute;
+    background: #FFF;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    left: 45px;
+    top: 89px;
+}
+  
+.link-dot:hover {
+    cursor: pointer;
+}
+
+.video-wrapper {
+    width: 150vw;
+    height: 100vh;
+}
+
+.video {
+    height: 150%;
+    z-index: -1;
 }
 
 #text-container {
-    color: #141312;
+    color: #000000;
     margin: 10vh 4vw;
-    font-size: 1.3rem;
-    display: flex;
-    line-height: 2.5rem;
-    font-family: "Libre Baskerville", serif;
-}
-
-.text-container {
-    margin: 10vh 5vw !important;
-}
-
-video {
-    width: 40vw;
-}
-
-
-
-figure>figcaption {
     font-size: 1rem;
-    text-align: right;
-    font-style: italic;
-    opacity: 0.6;
+    display: flex;
+    line-height: 2rem;
+    font-family: 'IBM Plex Mono', monospace;
+    width: 50vw;
 }
 
 @media only screen and (max-width: 1000px) {

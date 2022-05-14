@@ -1,0 +1,34 @@
+<head>
+    <script src="script.js"></script>
+    <link href="style.css" rel="stylesheet" />
+    <title>gathering blue</title>
+    <meta name="description" content="a lil' telescopic poem about alcoholism" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Source+Code+Pro:ital@0;1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="text-container">
+        <div className="block">
+            <div id="text-container-inner-s"></div>
+        </div>
+    </div>
+
+    <script>
+        const s = `
+* He 
+ * As he
+  * As the boy next to the river
+* stood there in
+* silence.
+ * silence, grasping onto 
+ * his bucket.
+  * the last bits of water he collected at the river
+`;
+
+        const node = createTelescopicTextFromBulletedList(s);
+        const container = document.getElementById("text-container-inner-s");
+        container.appendChild(node);
+    </script>
+</body>
