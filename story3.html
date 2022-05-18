@@ -1,0 +1,42 @@
+<head>
+    <script src="script.js"></script>
+    <link href="style.css" rel="stylesheet" />
+    <title>gathering blue</title>
+    <meta name="description" content="a lil' telescopic poem about alcoholism" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Source+Code+Pro:ital@0;1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div id="text-container">
+            <div class="block">
+                <div id="text-container-inner-s"></div><br/>
+                <a class="story-link" href="story4.html">Next Silk</a>
+            </div>
+            <div class="img-wrapper">
+                <img src="./assets/images/mount.jpg"/> 
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const s = `
+* Immortals 
+ * Our village lies within the mist of thirty-six strange peaks--immortals
+* that glimmer with the essence of life and 
+* knowledge
+ * knowledge. As the morning sun strikes the tree tops, we shuffle out into the fields. 
+ * Some 
+  * With our silks, laden with water, we begin our daily routine. Some
+ * of us bear freshly etched seeds, while others tend to older 
+ * foliage.
+  * foliage. It is a beautiful green world of thought.
+`;
+
+        const node = createTelescopicTextFromBulletedList(s);
+        const container = document.getElementById("text-container-inner-s");
+        container.appendChild(node);
+    </script>
+</body>

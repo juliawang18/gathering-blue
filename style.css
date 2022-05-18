@@ -1,7 +1,7 @@
 :root {
-    --telescope-highlight: #88acf355;
-    --telescope-highlight-hover: #6a8dff9a;
-    --telescope-text-color: #1f2021;
+    --telescope-highlight: #e7efff55;
+    --telescope-highlight-hover: #c8d5ff9a;
+    --telescope-text-color: #ffffff;
 }
 
 #telescope {
@@ -47,6 +47,7 @@ body {
     background: #fff;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 h1 {
@@ -114,6 +115,30 @@ p {
     line-height: 2rem;
     font-family: 'IBM Plex Mono', monospace;
     width: 50vw;
+}
+
+.story-link {
+    text-decoration: none;
+    color: #FFF;
+    margin-left: 4vw;
+}
+
+.story-link:hover {
+    text-decoration: underline;
+}
+
+.img-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150vw;
+    height: 100vh;
+    z-index: -10;
+}
+
+img {
+    height: 150%;
+    z-index: -1;
 }
 
 @media only screen and (max-width: 1000px) {

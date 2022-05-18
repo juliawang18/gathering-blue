@@ -1,0 +1,44 @@
+<head>
+    <script src="script.js"></script>
+    <link href="style.css" rel="stylesheet" />
+    <title>gathering blue</title>
+    <meta name="description" content="a lil' telescopic poem about alcoholism" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Source+Code+Pro:ital@0;1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div id="text-container">
+            <div class="block">
+                <div id="text-container-inner-s"></div><br/>
+                <a class="story-link" href="story5.html">Next Silk</a>
+            </div>
+            <div class="img-wrapper">
+                <img src="./assets/images/mount.jpg"/> 
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const s = `
+* A Liumeng’s body is made of mostly water and thus bears no consistent 
+* form.
+ * form. Their shape is only determined by the water silks that stem from the top of their 
+ * minds. 
+  * minds. These water silks are the seat of a Liumengs 
+  * existence. 
+   * existence. The planet they inhabit is carved with large stone massifs, carved with large stone steps, and covered in laces of 
+   * water.
+    * water. A Liumeng ingests this water by soaking their silks in the trickles of 
+    * mountain water.
+     * mountain water. As the water travels from the tip of the silks to the top of a Liumeng’s mind, it mixes with the essence of the mind, altering the chemical composition of the water, thus forming a liquid matter, unique to the mind of a Liumeng. 
+
+`;
+
+        const node = createTelescopicTextFromBulletedList(s);
+        const container = document.getElementById("text-container-inner-s");
+        container.appendChild(node);
+    </script>
+</body>

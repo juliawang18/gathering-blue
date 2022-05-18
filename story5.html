@@ -1,0 +1,69 @@
+<head>
+    <script src="script.js"></script>
+    <link href="style.css" rel="stylesheet" />
+    <title>gathering blue</title>
+    <meta name="description" content="a lil' telescopic poem about alcoholism" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Source+Code+Pro:ital@0;1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div id="text-container">
+            <div class="block">
+                <div id="text-container-inner-s"></div><br/>
+                <a class="story-link" href="story6.html">Next Silk</a>
+            </div>
+            <div class="img-wrapper">
+                <img src="./assets/images/bamboo.jpg"/> 
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const s = `
+* It is said by some that information is just 
+* facts.
+ * things conveyed or represented.
+  * commmunication of intelligence.
+   * a matter of abstract mechanics.
+     * a matter of abstract mechanics, only to be known through the workings of our 
+     * brain, 
+      * brain, only to be experienced through the feelings of our 
+      * mind. 
+       * mind. We know know such views to be 
+       * obselete.
+        * obselete. 
+        * ---
+        * A farming species, the Liumengs shape information by the cultivation of a variety of flora, such as 
+        * Tienchi Ginseng.
+         * Yunnan Cypresses.
+          * Golden Larches. 
+           * Lingxuan Wolfberries. 
+            * Lingxuan Wolfberries. Some of the wealthier members are able to concoct much more intricate and complicated seeds or 
+            * hybrids. 
+             * hybrids. Creation occurs from the beginning of 
+             * seed development.
+              * seed development. A writer first etches their thoughts onto a seed using a thin and hard blade they were gifted at 
+              * birth. 
+               * birth. The etched thoughts lay dormant until they are able to plant the seed into their ground. However, the process of implanting is a precarious one with many 
+               * risks. 
+                * risks. A Liumeng must choose the correct soil and grounds to place their seed 
+                * in. 
+                 * in. Using the liquid matter stored in the pockets of their 
+                 * silks, 
+                  * silks, they water the seedling with just a couple drops—any more or any less, the fragile coat of the seed could disintegrate, 
+                  * forcing them 
+                   * forcing them to either abandon their thought 
+                   * entirely 
+                    * entirely or restart the journey.
+
+
+`;
+
+        const node = createTelescopicTextFromBulletedList(s);
+        const container = document.getElementById("text-container-inner-s");
+        container.appendChild(node);
+    </script>
+</body>

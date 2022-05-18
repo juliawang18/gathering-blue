@@ -1,0 +1,61 @@
+<head>
+    <script src="script.js"></script>
+    <link href="style.css" rel="stylesheet" />
+    <title>gathering blue</title>
+    <meta name="description" content="a lil' telescopic poem about alcoholism" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Source+Code+Pro:ital@0;1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div id="text-container">
+            <div class="block">
+                <div id="text-container-inner-s"></div><br/>
+                <a class="story-link" href="story7.html">Last Silk</a>
+            </div>
+            <div class="img-wrapper">
+                <img src="./assets/images/mount.jpg"/> 
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const s = `
+* And so the Liumengs provide information life through the water stored in their 
+* silks. 
+ * silks. Each fiber of the silk carries the record of the accumulated mind of all its 
+ * ancestors.
+ * ancestors; the most durable bits surviving already millions of years of 
+ * usage.
+
+  * usage.
+  * ---
+  * Because of the delicate nature of storing 
+  * information, 
+   * information, the Liumengs were always in a precarious state of 
+   * existence. 
+    * existence. Any conquering race could easily ruin the traces of any of the 
+    * Liumengs 
+     * Liumengs and, while the mountains provided some protection from the forces of 
+     * nature, 
+      * nature, drought and storms would occasionally rip through their fields of 
+      * thought, 
+       * thought, erasing years worth of carefully cultivated information.
+       * ---
+       * We 
+        * The last time anyone saw a Liumeng was before the Meishui drought. We
+       * were only able to collect a few remnants of some of our 
+       * silks.
+        * silks, showing only a small glimpse of such 
+        * a beautiful existence and such a tragic disaster. 
+         * a beautiful existence and such a tragic disaster. These silks lay in waiting, until the day water can once again flow through the dry fiber and poured onto seeds of thought.
+
+`;
+
+        const node = createTelescopicTextFromBulletedList(s);
+        const container = document.getElementById("text-container-inner-s");
+        container.appendChild(node);
+    </script>
+</body>
